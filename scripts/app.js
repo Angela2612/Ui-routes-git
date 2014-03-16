@@ -18,6 +18,14 @@ angular.module('rutasApp', [
 		.state('Grupos', {
 			url: '/Grupos',
 			template: '<h2>Buuul</h2><p>Este es el grupo</p>' 
+		})
+		
+		.state('GrupoUsuario1', {
+			url: '/otra',
+			template:'<h3>Aquí mostraremos el listado de lo usuarios</h3><a ui-sref="GrupoUsuario1.recorrido">Ir al recorrido</a><div ui-view></div>'
+		})
+		.state('GrupoUsuario1.recorrido', {
+			url: '/otras',
+			template:'<ul><li>Angela</li><li>Tatiana</li><li>Fabio</li>'
 		});
-
 }])
